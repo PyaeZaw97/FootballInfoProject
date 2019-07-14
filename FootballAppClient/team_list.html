@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Team List</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.jqueryui.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script> -->
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="js/custom/get_team.js"></script>
+    <script src="js/custom/delete_team.js"></script>
+    <script src="js/custom/edit_player.js"></script>
+    <script src="js/custom/add_player.js"></script>
+
+    
+</head>
+<body style="background-image: url('images/stadium.jpg')">
+
+    <header class="s-header">
+    
+        <nav class="header-nav">
+
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+            <div class="header-nav__content">
+                <h3>Football Agency</h3>
+                
+                <ul class="header-nav__list">
+                    <li class="current"><a  href="index.html" title="home">Home</a></li>
+                    <li><a  href="player_list.html" title="player">Player</a></li>
+                    <li><a  href="team_list.html" title="team">Team</a></li>
+                    <li><a  href="about.html" title="about">About</a></li>
+                   
+                </ul>
+    
+                <p> This is DjangoRestFramework CRUD</p>
+    
+
+
+            </div> <!-- end header-nav__content -->
+
+        </nav> <!-- end header-nav -->
+
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-icon"></span>
+        </a>
+
+    </header>
+    
+    <div class="container">
+        <div class="row">
+        <div class="col-md-8" >
+            <h1>Team List</h1>
+        </div>
+        <div class=" col-md-2">
+          <a href="add_team.html" class=" addbutton btn btn-success">Add Team</a>
+        </div>
+    </div>
+	<table id="team_table" class="display" class="table table-hover text-center">
+        <thead>
+            <tr>
+                <th>TeamName</th>
+                <th>League</th>
+               <!--  <th>Rank</th>
+                <th>Establish</th>
+                <th>Birthdate</th>
+                <th>Nationality</th> -->
+                <th>Delete</th>
+                <th>Edit</th>
+            </tr>
+        </thead>
+        <tbody id="team_list">
+
+           
+
+	</tbody>
+</table>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
