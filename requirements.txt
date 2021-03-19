@@ -7,7 +7,7 @@ Django==2.2.1
 django-extra-fields==1.2.3
 django-taggit==1.1.0
 django-taggit-autocomplete-modified==0.1.0b6
-djangorestframework==3.9.4
+djangorestframework==3.11.2
 httpie==1.0.2
 idna==2.8
 itypes==1.1.0
