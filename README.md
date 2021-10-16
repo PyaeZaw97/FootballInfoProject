@@ -1,2 +1,3 @@
 # FootballInfoProject
-I am beginner...I try better
+footballers data CRUD
+
